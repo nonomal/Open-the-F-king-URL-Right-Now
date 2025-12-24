@@ -86,6 +86,7 @@
 // @match          https://www.qcc.com/web/transfer-link?link=*
 // @match          https://www.skland.com/third-link?target=*
 // @match          https://www.tianyancha.com/security?target=*
+// @match          https://www.xgw4.com/qqdl.html?url=*
 // @match          https://www.yuque.com/r/goto?url=*
 // @match          https://www.youtube.com/redirect?*
 // @match          https://wx.mail.qq.com/xmspamcheck/xmsafejump?*
@@ -203,6 +204,7 @@ const fuckers = {
   weixindev: { match: 'https://developers.weixin.qq.com/community/middlepage/href?href=', redirect: "href" },
   wj_qq: { match: 'https://wj.qq.com/s2/', redirect: function () { document.addEventListener("click", e => { if (e.target.className === "pe-link") e.stopPropagation() }, true) } },
   work_weixin: { match: 'https://open.work.weixin.qq.com/wwopen/uriconfirm?uri=', redirect: "uri" },
+  xgw4: { match: 'https://www.xgw4.com/qqdl.html?url=', redirect: function () { redirect(curURL, "url", true) } },
   yuque: { match: 'https://www.yuque.com/r/goto?url=', redirect: "url" },
   youtube: { match: 'https://www.youtube.com/redirect?', redirect: "q" },
   yy: { match: 'http://redir.yy.duowan.com/warning.php?url=', redirect: "url" },
