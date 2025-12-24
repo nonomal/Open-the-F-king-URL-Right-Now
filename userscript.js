@@ -91,7 +91,7 @@
 // @match          https://www.youtube.com/redirect?*
 // @match          https://wx.mail.qq.com/xmspamcheck/xmsafejump?*
 // @exclude        https://mp.weixin.qq.com/cgi-bin/*
-// @version        1.14.4
+// @version        1.14.5
 // @run-at         document-idle
 // @namespace      https://old-panda.com/
 // @require        https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
